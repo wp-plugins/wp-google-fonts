@@ -1,4 +1,4 @@
-=== Font Burner Control Panel ===
+=== WP Google Fonts ===
 Contributors: Adrian Hanft
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=designer%40adrianhanft%2ecom&lc=US&item_name=Wordpress%20Plugin%20Development&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: Google fonts, fonts, free fonts, typeset, typography, theme, admin, plugin, css, design, plugin, template, page, posts, links, flash
@@ -35,4 +35,4 @@ You can contact me (Adrian3) at http://adrian3.com/contact
 
 
 == Screenshots ==
-1. This screenshot shows the "settings" panel for the Font Burner plugin.
+1. This screenshot shows the "settings" panel for the WP Google Fonts plugin.
