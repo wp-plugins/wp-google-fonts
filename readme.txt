@@ -15,6 +15,9 @@ Right now, the Google Directory has 18 great fonts, and the selection will undou
 
 == Changelog ==
 
+Version 1.2
+- Added support for different font weights (variants). Still missing a couple IM Fell variants but will add them as soon as I get a chance.
+
 Version 1.0
 - The first official release of the plugin.
 
