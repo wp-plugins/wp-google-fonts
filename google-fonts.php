@@ -2,7 +2,7 @@
 /* 
 Plugin Name: WP Google Fonts
 Plugin URI: http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/
-Version: v1.9
+Version: v2.0
 Author: <a href="http://adrian3.com/">Adrian3</a>
 Description: The Wordpress Google Fonts Plugin makes it even easier to add and customize Google fonts on your site through Wordpress. 
 Author: Adrian Hanft
@@ -453,6 +453,14 @@ if ($this->options['googlefonts_font3'] == 'Droid Serif:regular,italic,bold,bold
 if ($this->options['googlefonts_font4'] == 'Droid Serif:regular,italic,bold,bolditalic') 		{ echo '<link href=\'http://fonts.googleapis.com/css?family=Droid Serif:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font5'] == 'Droid Serif:regular,italic,bold,bolditalic') 		{ echo '<link href=\'http://fonts.googleapis.com/css?family=Droid Serif:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Droid Serif:regular,italic,bold,bolditalic') 		{ echo '<link href=\'http://fonts.googleapis.com/css?family=Droid Serif:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// EB Garamond
+if ($this->options['googlefonts_font1'] == 'EB Garamond') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=EB+Garamond\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'EB Garamond') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=EB+Garamond\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'EB Garamond') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=EB+Garamond\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'EB Garamond') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=EB+Garamond\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'EB Garamond') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=EB+Garamond\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'EB Garamond') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=EB+Garamond\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
 // Expletus Sans
 if ($this->options['googlefonts_font1'] == 'Expletus Sans') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Expletus+Sans\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1053,6 +1061,62 @@ if ($this->options['googlefonts_font4'] == 'Nobile:regular,italic,bold,bolditali
 if ($this->options['googlefonts_font5'] == 'Nobile:regular,italic,bold,bolditalic') 				{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Nobile:regular,italic,bold,bolditalic') 				{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
+// Nova Slim
+if ($this->options['googlefonts_font1'] == 'Nova Slim') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Slim\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Nova Slim') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Slim\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Nova Slim') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Slim\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Nova Slim') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Slim\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Nova Slim') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Slim\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Nova Slim') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Slim\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Nova Script
+if ($this->options['googlefonts_font1'] == 'Nova Script') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Script\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Nova Script') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Script\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Nova Script') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Script\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Nova Script') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Script\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Nova Script') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Script\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Nova Script') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Script\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Nova Round
+if ($this->options['googlefonts_font1'] == 'Nova Round') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Round\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Nova Round') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Round\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Nova Round') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Round\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Nova Round') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Round\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Nova Round') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Round\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Nova Round') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Round\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Nova Oval
+if ($this->options['googlefonts_font1'] == 'Nova Oval') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Oval\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Nova Oval') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Oval\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Nova Oval') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Oval\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Nova Oval') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Oval\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Nova Oval') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Oval\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Nova Oval') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Oval\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Nova Mono
+if ($this->options['googlefonts_font1'] == 'Nova Mono') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Mono\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Nova Mono') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Mono\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Nova Mono') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Mono\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Nova Mono') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Mono\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Nova Mono') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Mono\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Nova Mono') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Mono\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Nova Flat
+if ($this->options['googlefonts_font1'] == 'Nova Flat') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Flat\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Nova Flat') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Flat\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Nova Flat') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Flat\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Nova Flat') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Flat\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Nova Flat') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Flat\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Nova Flat') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Flat\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Nova Cut
+if ($this->options['googlefonts_font1'] == 'Nova Cut') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Cut\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Nova Cut') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Cut\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Nova Cut') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Cut\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Nova Cut') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Cut\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Nova Cut') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Cut\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Nova Cut') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Nova+Cut\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
 // OFL Sorts Mill Goudy TT
 if ($this->options['googlefonts_font1'] == 'OFL Sorts Mill Goudy TT') 	{ echo '<link href=\'http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font2'] == 'OFL Sorts Mill Goudy TT') 	{ echo '<link href=\'http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1114,6 +1178,14 @@ if ($this->options['googlefonts_font3'] == 'Orbitron:900') 						{ echo '<link h
 if ($this->options['googlefonts_font4'] == 'Orbitron:900') 						{ echo '<link href=\'http://fonts.googleapis.com/css?family=Orbitron:900\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font5'] == 'Orbitron:900') 						{ echo '<link href=\'http://fonts.googleapis.com/css?family=Orbitron:900\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Orbitron:900') 						{ echo '<link href=\'http://fonts.googleapis.com/css?family=Orbitron:900\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Oswald
+if ($this->options['googlefonts_font1'] == 'Oswald') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Oswald\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Oswald') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Oswald\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Oswald') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Oswald\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Oswald') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Oswald\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Oswald') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Oswald\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Oswald') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Oswald\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
 // Pacifico
 if ($this->options['googlefonts_font1'] == 'Pacifico') 						{ echo '<link href=\'http://fonts.googleapis.com/css?family=Pacifico\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1276,6 +1348,14 @@ if ($this->options['googlefonts_font3'] == 'Schoolbell') 						{ echo '<link hre
 if ($this->options['googlefonts_font4'] == 'Schoolbell') 						{ echo '<link href=\'http://fonts.googleapis.com/css?family=Schoolbell\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font5'] == 'Schoolbell') 						{ echo '<link href=\'http://fonts.googleapis.com/css?family=Schoolbell\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Schoolbell') 						{ echo '<link href=\'http://fonts.googleapis.com/css?family=Schoolbell\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Six Caps
+if ($this->options['googlefonts_font1'] == 'Six Caps') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Six+Caps\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Six Caps') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Six+Caps\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Six Caps') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Six+Caps\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Six Caps') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Six+Caps\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Six Caps') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Six+Caps\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Six Caps') 					{ echo '<link href=\'http://fonts.googleapis.com/css?family=Six+Caps\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
 // Slackey
 if ($this->options['googlefonts_font1'] == 'Slackey') 						{ echo '<link href=\'http://fonts.googleapis.com/css?family=Slackey\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1917,6 +1997,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Droid Sans Mono">Droid Sans Mono</option>
 <option value="Droid Serif">Droid Serif</option>
 <option value="Droid Serif:regular,italic,bold,bolditalic">Droid Serif (plus italic, bold, and bold italic)</option>
+<option value="EB Garamond">EB Garamond</option>
 <option value="Expletus Sans">Expletus Sans</option>
 <option value="Expletus Sans:regular,500,600,bold">Expletus Sans (plus 500, 600, and bold)</option>
 <option value="Fontdiner Swanky">Fontdiner Swanky</option>
@@ -1993,6 +2074,13 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Mountains of Christmas">Mountains of Christmas</option>
 <option value="Nobile">Nobile</option>
 <option value="Nobile:regular,italic,bold,bolditalic">Nobile (plus italic, bold, and bold italic)</option>
+<option value="Nova Cut">Nova Cut</option>
+<option value="Nova Flat">Nova Flat</option>
+<option value="Nova Mono">Nova Mono</option>
+<option value="Nova Oval">Nova Oval</option>
+<option value="Nova Round">Nova Round</option>
+<option value="Nova Script">Nova Script</option>
+<option value="Nova Slim">Nova Slim</option>
 <option value="Neucha">Neucha</option>
 <option value="Neuton">Neuton</option>
 <option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
@@ -2003,6 +2091,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Orbitron:500">Orbitron 500</option>
 <option value="Orbitron:bold">Orbitron Regular (700)</option>
 <option value="Orbitron:900">Orbitron 900</option>
+<option value="Oswald">Oswald</option>
 <option value="Reenie Beanie">Reenie Beanie</option>
 <option value="Pacifico">Pacifico</option>
 <option value="Permanent Marker">Permanent Marker</option>
@@ -2024,6 +2113,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Raleway:100">Raleway</option>
 <option value="Rock Salt">Rock Salt</option>
 <option value="Schoolbell">Schoolbell</option>
+<option value="Six Caps">Six Caps</option>
 <option value="Slackey">Slackey</option>
 <option value="Sniglet:800">Sniglet</option>
 <option value="Sunshiney">Sunshiney</option>
