@@ -11,9 +11,12 @@ The WP Google Fonts plugin allows you to easily add fonts from the Google Font D
 == Description ==
 Google's free font directory is one of the most exciting developments in web typography in a very long time. The amazing rise of this new font resource has made this plugin the most popular font plugin on Wordpress and it shows no signs of stopping. While <a href="http://www.fontburner.com/the-font-burner-wordpress-plugin/">font plugin</a> solutions like FontBurner.com have helped bring rich typography to Wordpress themes, the selection of fonts easily available to the average blogger have been limited. The WP Google Font plugin makes it even easier to use Google's free service to add high quality fonts to your Wordpress powered site. Not only does this plugin add the necessary Google code, but it also gives you the ability to assign the Google fonts to specific CSS elements of your website from within the Wordpress admin. Or if you would rather, you can target the Google fonts from your own theme's stylesheet.
 
-Right now, the Google Directory has 99 great fonts, and the selection is steadily growing. As new fonts are added, we will release updates to the plugin quickly so you can start using new fonts as they become available. It truly is an exciting time to be creating websites, and I hope this plugin helps you create some great stuff. - Adrian3
+Right now, the Google Directory has 103 great fonts, and the selection is steadily growing. As new fonts are added, we will release updates to the plugin quickly so you can start using new fonts as they become available. It truly is an exciting time to be creating websites, and I hope this plugin helps you create some great stuff. - Adrian3
 
 == Changelog ==
+Version 2.0
+- Added support for EB Garamond, Nova Slim, Nova Script, Nova Round, Nova Oval, Nova Mono, Nova Flat, Nova Cut, Oswald, and Six Caps.
+
 Version 1.9
 - Added support for another 22 fonts: Amaranth, Anton, Architects Daughter, Astloch, Bevan, Cabin Sketch, Candal, Dancing Script, Expletus Sans, Goudy Bookletter 1911, Indie Flower, Irish Grover, Kreon, League Script, Meddon, MedievalSharp, Pacifico, PT Serif, PT Serif Caption, Quattrocento, Radley, VT323. Also confirmed compatibility Wordpress 3.1
 
