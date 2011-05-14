@@ -11,9 +11,14 @@ The WP Google Fonts plugin allows you to easily add fonts from the Google Font D
 == Description ==
 Google's free font directory is one of the most exciting developments in web typography in a very long time. The amazing rise of this new font resource has made this plugin the most popular font plugin on Wordpress and it shows no signs of stopping. While <a href="http://www.fontburner.com/the-font-burner-wordpress-plugin/">font plugin</a> solutions like FontBurner.com have helped bring rich typography to Wordpress themes, the selection of fonts easily available to the average blogger have been limited. The WP Google Font plugin makes it even easier to use Google's free service to add high quality fonts to your Wordpress powered site. Not only does this plugin add the necessary Google code, but it also gives you the ability to assign the Google fonts to specific CSS elements of your website from within the Wordpress admin. Or if you would rather, you can target the Google fonts from your own theme's stylesheet.
 
-Right now, the Google Directory has 103 great fonts, and the selection is steadily growing. As new fonts are added, we will release updates to the plugin quickly so you can start using new fonts as they become available. It truly is an exciting time to be creating websites, and I hope this plugin helps you create some great stuff. - Adrian3
+Right now, the Google Directory has over 140 great fonts, and the selection is steadily growing. As new fonts are added, we will release updates to the plugin quickly so you can start using new fonts as they become available. It truly is an exciting time to be creating websites, and I hope this plugin helps you create some great stuff. - Adrian3
 
 == Changelog ==
+Version 2.1
+- Added support for 38 more fonts including: Aclonica, Annie Use Your Telescope, Bangers, Bigshot One, Carter One, Damion, Dawning of a New Day, Didact Gothic, Francois One, Holtwood One SC, Judson, Mako, Megrim, Metrophobic, Michroma, Miltonian Tattoo, Miltonian, Momofett, News Cycle, Nova Square, Open Sans , Open Sans Condensed, Over the Rainbow, Paytone One, Play, Quattrocento Sans, Rokkitt, Shanti, Sigmar One, Smythe, Special Elite, Sue Ellen Francisco, Swanky and Moo Moo, Terminal Dosis Light, The Girl Next Door, Ultra, Waiting for the Sunrise, and Wallpoet.
+
+- Now works on https sites using the "Wordpress HTTPS" plugin thanks to the help of Pete Toborek.
+
 Version 2.0
 - Added support for EB Garamond, Nova Slim, Nova Script, Nova Round, Nova Oval, Nova Mono, Nova Flat, Nova Cut, Oswald, and Six Caps.
 
