@@ -2,7 +2,7 @@
 /* 
 Plugin Name: WP Google Fonts
 Plugin URI: http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/
-Version: v2.1
+Version: v2.2
 Author: <a href="http://adrian3.com/">Adrian3</a>
 Description: The Wordpress Google Fonts Plugin makes it even easier to add and customize Google fonts on your site through Wordpress. 
 Author: Adrian Hanft
@@ -270,6 +270,14 @@ if ($this->options['googlefonts_font4'] == 'Bigshot One') 						{ echo '<link hr
 if ($this->options['googlefonts_font5'] == 'Bigshot One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Bigshot+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Bigshot One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Bigshot+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
+// Brawler
+if ($this->options['googlefonts_font1'] == 'Brawler') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Brawler\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Brawler') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Brawler\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Brawler') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Brawler\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Brawler') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Brawler\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Brawler') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Brawler\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Brawler') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Brawler\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
 // Buda Light
 if ($this->options['googlefonts_font1'] == 'Buda:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Buda:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font2'] == 'Buda:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Buda:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -348,6 +356,22 @@ if ($this->options['googlefonts_font3'] == 'Carter One') 						{ echo '<link hre
 if ($this->options['googlefonts_font4'] == 'Carter One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Carter+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font5'] == 'Carter One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Carter+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Carter One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Carter+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Caudex
+if ($this->options['googlefonts_font1'] == 'Caudex') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Caudex') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Caudex') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Caudex') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Caudex') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Caudex') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Caudex:regular,italic,bold,bolditalic
+if ($this->options['googlefonts_font1'] == 'Caudex:regular,italic,bold,bolditalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Caudex:regular,italic,bold,bolditalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Caudex:regular,italic,bold,bolditalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Caudex:regular,italic,bold,bolditalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Caudex:regular,italic,bold,bolditalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Caudex:regular,italic,bold,bolditalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Caudex:regular,italic,bold,bolditalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
 // Cherry Cream Soda
 if ($this->options['googlefonts_font1'] == 'Cherry Cream Soda') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Cherry+Cream+Soda\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -906,6 +930,38 @@ if ($this->options['googlefonts_font4'] == 'Judson:regular,regularitalic,bold') 
 if ($this->options['googlefonts_font5'] == 'Judson:regular,regularitalic,bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Judson:regular,regularitalic,bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Judson:regular,regularitalic,bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Judson:regular,regularitalic,bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
+// Jura:light
+if ($this->options['googlefonts_font1'] == 'Jura:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Jura:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Jura:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Jura:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Jura:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Jura:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Jura:500
+if ($this->options['googlefonts_font1'] == 'Jura:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Jura:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Jura:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Jura:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Jura:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Jura:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Jura
+if ($this->options['googlefonts_font1'] == 'Jura') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Jura') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Jura') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Jura') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Jura') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Jura') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Jura:600
+if ($this->options['googlefonts_font1'] == 'Jura:600') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:600\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Jura:600') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:600\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Jura:600') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:600\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Jura:600') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:600\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Jura:600') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:600\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Jura:600') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Jura:600\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
 // Just Another Hand
 if ($this->options['googlefonts_font1'] == 'Just Another Hand') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Just+Another+Hand\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font2'] == 'Just Another Hand') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Just+Another+Hand\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1066,6 +1122,14 @@ if ($this->options['googlefonts_font4'] == 'Lekton:regular,italic,bold') 						{
 if ($this->options['googlefonts_font5'] == 'Lekton:regular,italic,bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Lekton:regular,italic,bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Lekton:regular,italic,bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Lekton:regular,italic,bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
+// Limelight
+if ($this->options['googlefonts_font1'] == 'Limelight') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Limelight\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Limelight') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Limelight\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Limelight') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Limelight\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Limelight') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Limelight\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Limelight') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Limelight\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Limelight') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Limelight\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
 // Lobster
 if ($this->options['googlefonts_font1'] == 'Lobster') 					{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Lobster\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font2'] == 'Lobster') 					{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Lobster\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1097,6 +1161,38 @@ if ($this->options['googlefonts_font3'] == 'Mako') 						{ echo '<link href=\''.
 if ($this->options['googlefonts_font4'] == 'Mako') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Mako\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font5'] == 'Mako') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Mako\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Mako') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Mako\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Maven Pro:900
+if ($this->options['googlefonts_font1'] == 'Maven Pro:900') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:900\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Maven Pro:900') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:900\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Maven Pro:900') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:900\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Maven Pro:900') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:900\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Maven Pro:900') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:900\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Maven Pro:900') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:900\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Maven Pro
+if ($this->options['googlefonts_font1'] == 'Maven Pro') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Maven Pro') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Maven Pro') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Maven Pro') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Maven Pro') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Maven Pro') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Maven Pro:500
+if ($this->options['googlefonts_font1'] == 'Maven Pro:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Maven Pro:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Maven Pro:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Maven Pro:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Maven Pro:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Maven Pro:500') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:500\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Maven Pro:bold
+if ($this->options['googlefonts_font1'] == 'Maven Pro:bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Maven Pro:bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Maven Pro:bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Maven Pro:bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Maven Pro:bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Maven Pro:bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Maven+Pro:bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
 // Meddon
 if ($this->options['googlefonts_font1'] == 'Meddon') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Meddon\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1185,6 +1281,38 @@ if ($this->options['googlefonts_font3'] == 'Mountains of Christmas') 					{ echo
 if ($this->options['googlefonts_font4'] == 'Mountains of Christmas') 					{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Mountains+of+Christmas\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font5'] == 'Mountains of Christmas') 					{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Mountains+of+Christmas\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Mountains of Christmas') 					{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Mountains+of+Christmas\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Muli
+if ($this->options['googlefonts_font1'] == 'Muli') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Muli') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Muli') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Muli') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Muli') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Muli') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Muli:regular,regularitalic
+if ($this->options['googlefonts_font1'] == 'Muli:regular,regularitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:regular,regularitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Muli:regular,regularitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:regular,regularitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Muli:regular,regularitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:regular,regularitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Muli:regular,regularitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:regular,regularitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Muli:regular,regularitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:regular,regularitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Muli:regular,regularitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:regular,regularitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Muli:light
+if ($this->options['googlefonts_font1'] == 'Muli:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Muli:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Muli:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Muli:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Muli:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Muli:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Muli:light,lightitalic
+if ($this->options['googlefonts_font1'] == 'Muli:light,lightitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light,lightitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Muli:light,lightitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light,lightitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Muli:light,lightitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light,lightitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Muli:light,lightitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light,lightitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Muli:light,lightitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light,lightitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Muli:light,lightitalic') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Muli:light,lightitalic\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
 // Neucha
 if ($this->options['googlefonts_font1'] == 'Neucha') 					{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Neucha\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1288,6 +1416,22 @@ if ($this->options['googlefonts_font3'] == 'Nova Square') 					{ echo '<link hre
 if ($this->options['googlefonts_font4'] == 'Nova Square') 					{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nova+Square\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font5'] == 'Nova Square') 					{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nova+Square\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Nova Square') 					{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nova+Square\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Nunito
+if ($this->options['googlefonts_font1'] == 'Nunito') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Nunito') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Nunito') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Nunito') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Nunito') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Nunito') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Nunito:light
+if ($this->options['googlefonts_font1'] == 'Nunito:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Nunito:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Nunito:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Nunito:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Nunito:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Nunito:light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Nunito:light\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
 // OFL Sorts Mill Goudy TT
 if ($this->options['googlefonts_font1'] == 'OFL Sorts Mill Goudy TT') 	{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1471,6 +1615,22 @@ if ($this->options['googlefonts_font4'] == 'Play:regular,bold') 						{ echo '<l
 if ($this->options['googlefonts_font5'] == 'Play:regular,bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Play:regular,bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Play:regular,bold') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Play:regular,bold\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
+// Playfair Display
+if ($this->options['googlefonts_font1'] == 'Playfair Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Playfair+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Playfair Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Playfair+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Playfair Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Playfair+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Playfair Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Playfair+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Playfair Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Playfair+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Playfair Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Playfair+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Podkova
+if ($this->options['googlefonts_font1'] == 'Podkova') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Podkova\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Podkova') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Podkova\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Podkova') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Podkova\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Podkova') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Podkova\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Podkova') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Podkova\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Podkova') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Podkova\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
 // PT Sans
 if ($this->options['googlefonts_font1'] == 'PT Sans') 				{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=PT+Sans\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font2'] == 'PT Sans') 			  { echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=PT+Sans\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1617,6 +1777,14 @@ if ($this->options['googlefonts_font4'] == 'Rokkitt') 						{ echo '<link href=\
 if ($this->options['googlefonts_font5'] == 'Rokkitt') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Rokkitt\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Rokkitt') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Rokkitt\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
+// Ruslan Display
+if ($this->options['googlefonts_font1'] == 'Ruslan Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Ruslan+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Ruslan Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Ruslan+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Ruslan Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Ruslan+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Ruslan Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Ruslan+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Ruslan Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Ruslan+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Ruslan Display') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Ruslan+Display\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
 // Schoolbell
 if ($this->options['googlefonts_font1'] == 'Schoolbell') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Schoolbell\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font2'] == 'Schoolbell') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Schoolbell\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1720,6 +1888,14 @@ if ($this->options['googlefonts_font3'] == 'Tangerine') 				{ echo '<link href=\
 if ($this->options['googlefonts_font4'] == 'Tangerine') 				{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Tangerine\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font5'] == 'Tangerine') 				{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Tangerine\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Tangerine') 				{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Tangerine\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Tenor Sans
+if ($this->options['googlefonts_font1'] == 'Tenor Sans') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Tenor+Sans\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Tenor Sans') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Tenor+Sans\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Tenor Sans') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Tenor+Sans\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Tenor Sans') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Tenor+Sans\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Tenor Sans') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Tenor+Sans\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Tenor Sans') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Tenor+Sans\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
 // Terminal Dosis Light
 if ($this->options['googlefonts_font1'] == 'Terminal Dosis Light') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Terminal+Dosis+Light\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -1854,6 +2030,14 @@ if ($this->options['googlefonts_font3'] == 'Walter Turncoat') 						{ echo '<lin
 if ($this->options['googlefonts_font4'] == 'Walter Turncoat') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Walter+Turncoat\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font5'] == 'Walter Turncoat') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Walter+Turncoat\' rel=\'stylesheet\' type=\'text/css\' />'; }
 if ($this->options['googlefonts_font6'] == 'Walter Turncoat') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Walter+Turncoat\' rel=\'stylesheet\' type=\'text/css\' />'; }
+
+// Wire One
+if ($this->options['googlefonts_font1'] == 'Wire One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Wire+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font2'] == 'Wire One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Wire+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font3'] == 'Wire One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Wire+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font4'] == 'Wire One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Wire+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font5'] == 'Wire One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Wire+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
+if ($this->options['googlefonts_font6'] == 'Wire One') 						{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Wire+One\' rel=\'stylesheet\' type=\'text/css\' />'; }
 
 // Yanone Kaffeesatz
 if ($this->options['googlefonts_font1'] == 'Yanone Kaffeesatz') 			{ echo '<link href=\''.$http.'://fonts.googleapis.com/css?family=Yanone+Kaffeesatz\' rel=\'stylesheet\' type=\'text/css\' />'; }
@@ -2337,6 +2521,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Bentham">Bentham</option>
 <option value="Bevan">Bevan</option>
 <option value="Bigshot One">Bigshot One</option>
+<option value="Brawler">Brawler </option>
 <option value="Buda:light">Buda</option>
 <option value="Cabin">Cabin</option>
 <option value="Cabin:regular,500,600,bold">Cabin (plus 500, 600, and bold)</option>
@@ -2347,6 +2532,8 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Cantarell:regular,italic,bold,bolditalic">Cantarell (plus italic, bold, and bold italic)</option>
 <option value="Cardo">Cardo</option>
 <option value="Carter One">Carter One</option>
+<option value="Caudex">Caudex</option>
+<option value="Caudex:regular,italic,bold,bolditalic">Caudex (plus italic, bold, and bold italic)</option>
 <option value="Cherry Cream Soda">Cherry Cream Soda</option>
 <option value="Chewy">Chewy</option>
 <option value="Coda">Coda</option>
@@ -2420,6 +2607,10 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Josefin Slab:bold,bolditalic">Josefin Slab Bold 700 (plus italic)</option>
 <option value="Judson">Judson</option>
 <option value="Judson:regular,regularitalic,bold">Judson (plus bold)</option>
+<option value="Jura:light"> Jura Light</option>
+<option value="Jura"> Jura Regular</option>
+<option value="Jura:500"> Jura 500</option>
+<option value="Jura:600"> Jura 600</option>
 <option value="Just Another Hand">Just Another Hand</option>
 <option value="Just Me Again Down Here">Just Me Again Down Here</option>
 <option value="Kenia">Kenia</option>
@@ -2440,10 +2631,15 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="League Script">League Script</option>
 <option value="Lekton"> Lekton </option>
 <option value="Lekton:regular,italic,bold">Lekton (plus italic and bold)</option>
+<option value="Limelight"> Limelight </option>
 <option value="Lobster">Lobster</option>
 <option value="Luckiest Guy">Luckiest Guy</option>
 <option value="Maiden Orange">Maiden Orange</option>
 <option value="Mako">Mako</option>
+<option value="Maven Pro"> Maven Pro</option>
+<option value="Maven Pro:500"> Maven Pro 500</option>
+<option value="Maven Pro:bold"> Maven Pro 700</option>
+<option value="Maven Pro:900"> Maven Pro 900</option>
 <option value="Meddon">Meddon</option>
 <option value="MedievalSharp">MedievalSharp</option>
 <option value="Megrim">Megrim</option>
@@ -2455,6 +2651,12 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Monofett">Monofett</option>
 <option value="Molengo">Molengo</option>
 <option value="Mountains of Christmas">Mountains of Christmas</option>
+<option value="Muli:light">Muli Light</option>
+<option value="Muli:light,lightitalic">Muli Light (plus italic)</option>
+<option value="Muli">Muli Regular</option>
+<option value="Muli:regular,regularitalic">Muli Regular (plus italic)</option>
+<option value="Neucha">Neucha</option>
+<option value="Neuton">Neuton</option>
 <option value="News Cycle">News Cycle</option>
 <option value="Nobile">Nobile</option>
 <option value="Nobile:regular,italic,bold,bolditalic">Nobile (plus italic, bold, and bold italic)</option>
@@ -2466,8 +2668,8 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Nova Script">Nova Script</option>
 <option value="Nova Slim">Nova Slim</option>
 <option value="Nova Square">Nova Square</option>
-<option value="Neucha">Neucha</option>
-<option value="Neuton">Neuton</option>
+<option value="Nunito:light"> Nunito Light</option>
+<option value="Nunito"> Nunito Regular</option>
 <option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
 <option value="OFL Sorts Mill Goudy TT:regular,italic">OFL Sorts Mill Goudy TT (plus italic)</option>
 <option value="Old Standard TT">Old Standard TT</option>
@@ -2492,6 +2694,8 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Philosopher">Philosopher</option>
 <option value="Play">Play</option>
 <option value="Play:regular,bold">Play (plus bold)</option>
+<option value="Playfair Display"> Playfair Display </option>
+<option value="Podkova"> Podkova </option>
 <option value="PT Sans">PT Sans</option>
 <option value="PT Sans:regular,italic,bold,bolditalic">PT Sans (plus itlic, bold, and bold italic)</option>
 <option value="PT Sans Caption">PT Sans Caption</option>
@@ -2510,6 +2714,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Raleway:100">Raleway</option>
 <option value="Rock Salt">Rock Salt</option>
 <option value="Rokkitt">Rokkitt</option>
+<option value="Ruslan Display">Ruslan Display</option>
 <option value="Schoolbell">Schoolbell</option>
 <option value="Shanti">Shanti</option>
 <option value="Sigmar One">Sigmar One</option>
@@ -2523,6 +2728,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Swanky and Moo Moo">Swanky and Moo Moo</option>
 <option value="Syncopate">Syncopate</option>
 <option value="Tangerine">Tangerine</option>
+<option value="Tenor Sans"> Tenor Sans </option>
 <option value="Terminal Dosis Light">Terminal Dosis Light</option>
 <option value="The Girl Next Door">The Girl Next Door</option>
 <option value="Tinos">Tinos</option>
@@ -2540,6 +2746,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Waiting for the Sunrise">Waiting for the Sunrise</option>
 <option value="Wallpoet">Wallpoet</option>
 <option value="Walter Turncoat">Walter Turncoat</option>
+<option value="Wire One">Wire One</option>
 <option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
 <option value="Yanone Kaffeesatz:300">Yanone Kaffeesatz:300</option>
 <option value="Yanone Kaffeesatz:400">Yanone Kaffeesatz:400</option>
