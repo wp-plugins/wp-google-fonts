@@ -2,7 +2,7 @@
 /* 
 Plugin Name: WP Google Fonts
 Plugin URI: http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/
-Version: v2.3
+Version: v2.4
 Author: <a href="http://adrian3.com/">Adrian3</a>
 Description: The Wordpress Google Fonts Plugin makes it even easier to add and customize Google fonts on your site through Wordpress. 
 Author: Adrian Hanft
@@ -23,7 +23,7 @@ Author URI: http://adrian3.com/projects/wordpress-plugins/
  * See the License for the specific language governing permissions and
  * limitations under the License.
 */
- 
+
 // Pre-2.6 compatibility
 if ( ! defined( 'WP_CONTENT_URL' ) )
       define( 'WP_CONTENT_URL', get_option( 'siteurl' ) . '/wp-content' );
@@ -117,27 +117,27 @@ echo '
 
 
 $googlefont1 = $this->options['googlefonts_font1'];
-if ($googlefont1!='off') {
+if ($googlefont1!='off' && $googlefont1) {
 echo '<link href=\''.$http.'://fonts.googleapis.com/css?family='.$googlefont1.'\' rel=\'stylesheet\' type=\'text/css\' />';
 }
 $googlefont2 = $this->options['googlefonts_font2'];
-if ($googlefont2!='off') {
+if ($googlefont2!='off' && $googlefont2) {
 echo '<link href=\''.$http.'://fonts.googleapis.com/css?family='.$googlefont2.'\' rel=\'stylesheet\' type=\'text/css\' />';
 }
 $googlefont3 = $this->options['googlefonts_font3'];
-if ($googlefont3!='off') {
+if ($googlefont3!='off' && $googlefont3) {
 echo '<link href=\''.$http.'://fonts.googleapis.com/css?family='.$googlefont3.'\' rel=\'stylesheet\' type=\'text/css\' />';
 }
 $googlefont4 = $this->options['googlefonts_font4'];
-if ($googlefont4!='off') {
+if ($googlefont4!='off' && $googlefont4) {
 echo '<link href=\''.$http.'://fonts.googleapis.com/css?family='.$googlefont4.'\' rel=\'stylesheet\' type=\'text/css\' />';
 }
 $googlefont5 = $this->options['googlefonts_font5'];
-if ($googlefont5!='off') {
+if ($googlefont5!='off' && $googlefont5) {
 echo '<link href=\''.$http.'://fonts.googleapis.com/css?family='.$googlefont5.'\' rel=\'stylesheet\' type=\'text/css\' />';
 }
 $googlefont6 = $this->options['googlefonts_font6'];
-if ($googlefont6!='off') {
+if ($googlefont6!='off' && $googlefont6) {
 echo '<link href=\''.$http.'://fonts.googleapis.com/css?family='.$googlefont16.'\' rel=\'stylesheet\' type=\'text/css\' />';
 }
 
@@ -555,9 +555,9 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
   <tr>
     <td>
 
-<h1>Google Font Control Panel</h1>
+<h1><?php _e('Google Font Control Panel', 'googlefonts'); ?></h1>
 <p><img src="<?php 	echo get_bloginfo('wpurl'); 
-	echo '/wp-content/plugins/wp-google-fonts/images/google-fonts-logo.jpg'; ?>" align="right" />This control panel gives you the ability to control how your Google Fonts fonts are displayed. For more information about this plugin, please visit the <a href="http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/" title="Google Fonts plugin page">Google Fonts plugin page</a>. Thanks for using Google Fonts, and I hope you like this plugin. <a href="http://adrian3.com/" title="-Adrian 3">-Adrian3</a></p>
+	echo '/wp-content/plugins/wp-google-fonts/images/google-fonts-logo.jpg'; ?>" align="right" /><?php _e('This control panel gives you the ability to control how your Google Fonts fonts are displayed. For more information about this plugin, please visit the', 'googlefonts'); ?> <a href="http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/" title="Google Fonts plugin page"><?php _e('Google Fonts plugin page', 'googlefonts'); ?></a>. <?php _e('Thanks for using Google Fonts, and I hope you like this plugin.', 'googlefonts'); ?> <a href="http://adrian3.com/" title="-Adrian 3">-Adrian3</a></p>
  
 
 
@@ -568,12 +568,17 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 
 <hr />
 
-
-
+<!-- most recent font added was Delius Unicase August 27, 2011-->
 <?php
 	function listgooglefontoptions() { echo '
+<option value="Abel">Abel </option>
 <option value="Aclonica">Aclonica</option>
+<option value="Actor">Actor </option>
+<option value="Aldrich">Aldrich </option>
+<option value="Alice">Alice </option>
+<option value="Alike">Alike </option>
 <option value="Allan">Allan</option>
+<option value="Andika">Andika </option>
 <option value="Annie Use Your Telescope">Annie Use Your Telescope</option>
 <option value="Anonymous Pro">Anonymous Pro</option>
 <option value="Anonymous Pro:regular,italic,bold,bolditalic">Anonymous Pro (plus italic, bold, and bold italic)</option>
@@ -590,10 +595,12 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Asset">Asset</option>
 <option value="Astloch">Astloch</option>
 <option value="Astloch:regular,bold">Astloch (plus bold)</option>
+<option value="Aubrey">Aubrey </option>
 <option value="Bangers">Bangers</option>
 <option value="Bentham">Bentham</option>
 <option value="Bevan">Bevan</option>
 <option value="Bigshot One">Bigshot One</option>
+<option value="Black Ops One">Black Ops One </option>
 <option value="Bowlby One">Bowlby One</option>
 <option value="Bowlby One SC">Bowlby One SC</option>
 <option value="Brawler">Brawler </option>
@@ -606,6 +613,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Cantarell">Cantarell</option>
 <option value="Cantarell:regular,italic,bold,bolditalic">Cantarell (plus italic, bold, and bold italic)</option>
 <option value="Cardo">Cardo</option>
+<option value="Carme">Carme </option>
 <option value="Carter One">Carter One</option>
 <option value="Caudex">Caudex</option>
 <option value="Caudex:regular,italic,bold,bolditalic">Caudex (plus italic, bold, and bold italic)</option>
@@ -613,11 +621,15 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Cherry Cream Soda">Cherry Cream Soda</option>
 <option value="Chewy">Chewy</option>
 <option value="Coda">Coda</option>
+<option value="Comfortaa">Comfortaa </option>
+<option value="Comfortaa:300,400,700">Comfortaa (plus book and bold) </option>
 <option value="Coming Soon">Coming Soon</option>
 <option value="Copse">Copse</option>
 <option value="Corben:bold">Corben</option>
 <option value="Cousine">Cousine</option>
 <option value="Cousine:regular,italic,bold,bolditalic">Cousine (plus italic, bold, and bold italic)</option>
+<option value="Coustard">Coustard </option>
+<option value="Coustard:400,900">Coustard (plus ultra bold) </option>
 <option value="Covered By Your Grace">Covered By Your Grace</option>
 <option value="Crafty Girls">Crafty Girls</option>
 <option value="Crimson Text">Crimson Text</option>
@@ -626,6 +638,10 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Damion">Damion</option>
 <option value="Dancing Script">Dancing Script</option>
 <option value="Dawning of a New Day">Dawning of a New Day</option>
+<option value="Days One">Days One </option>
+<option value="Delius">Delius </option>
+<option value="Delius Swash Caps">Delius Swash Caps </option>
+<option value="Delius Unicase">Delius Unicase </option>
 <option value="Didact Gothic">Didact Gothic</option>
 <option value="Droid Sans">Droid Sans</option>
 <option value="Droid Sans:regular,bold">Droid Sans (plus bold)</option>
@@ -635,11 +651,19 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="EB Garamond">EB Garamond</option>
 <option value="Expletus Sans">Expletus Sans</option>
 <option value="Expletus Sans:regular,500,600,bold">Expletus Sans (plus 500, 600, and bold)</option>
+<option value="Federo">Federo </option>
 <option value="Fontdiner Swanky">Fontdiner Swanky</option>
 <option value="Forum">Forum</option>
 <option value="Francois One">Francois One</option>
+<option value="Gentium Basic">Gentium Basic </option>
+<option value="Gentium Basic:400,700,400italic,700italic">Gentium Basic (plus bold and italic) </option>
+<option value="Gentium Book Basic">Gentium Book Basic </option>
+<option value="Gentium Book Basic:400,400italic,700,700italic">Gentium Book Basic (plus bold and italic) </option>
 <option value="Geo">Geo</option>
+<option value="Geostar">Geostar </option>
+<option value="Geostar Fill">Geostar Fill </option>
 <option value="Give You Glory">Give You Glory</option>
+<option value="Gloria Hallelujah">Gloria Hallelujah </option>
 <option value="Goblin One">Goblin One</option>
 <option value="Goudy Bookletter 1911">Goudy Bookletter 1911</option>
 <option value="Gravitas One">Gravitas One</option>
@@ -698,6 +722,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Just Me Again Down Here">Just Me Again Down Here</option>
 <option value="Kameron">Kameron</option>
 <option value="Kameron:400,700">Kameron (plus bold)</option>
+<option value="Kelly Slab">Kelly Slab </option>
 <option value="Kenia">Kenia</option>
 <option value="Kranky">Kranky</option>
 <option value="Kreon">Kreon</option>
@@ -715,6 +740,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Lato:900">Lato 900</option>
 <option value="Lato:900,900italic">Lato 900 (plus italic)</option>
 <option value="League Script">League Script</option>
+<option value="Leckerli One">Leckerli One </option>
 <option value="Lekton"> Lekton </option>
 <option value="Lekton:regular,italic,bold">Lekton (plus italic and bold)</option>
 <option value="Limelight"> Limelight </option>
@@ -728,6 +754,8 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Luckiest Guy">Luckiest Guy</option>
 <option value="Maiden Orange">Maiden Orange</option>
 <option value="Mako">Mako</option>
+<option value="Marvel">Marvel </option>
+<option value="Marvel:400,400italic,700,700italic">Marvel (plus bold and italic) </option>
 <option value="Maven Pro"> Maven Pro</option>
 <option value="Maven Pro:500"> Maven Pro 500</option>
 <option value="Maven Pro:bold"> Maven Pro 700</option>
@@ -743,6 +771,8 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Modern Antiqua">Modern Antiqua</option>
 <option value="Monofett">Monofett</option>
 <option value="Molengo">Molengo</option>
+<option value="Monoton">Monoton </option>
+<option value="Montez">Montez </option>
 <option value="Mountains of Christmas">Mountains of Christmas</option>
 <option value="Muli:light">Muli Light</option>
 <option value="Muli:light,lightitalic">Muli Light (plus italic)</option>
@@ -762,6 +792,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Nova Script">Nova Script</option>
 <option value="Nova Slim">Nova Slim</option>
 <option value="Nova Square">Nova Square</option>
+<option value="Numans">Numans </option>
 <option value="Nunito:light"> Nunito Light</option>
 <option value="Nunito"> Nunito Regular</option>
 <option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
@@ -781,6 +812,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Orbitron:900">Orbitron 900</option>
 <option value="Oswald">Oswald</option>
 <option value="Over the Rainbow">Over the Rainbow</option>
+<option value="Ovo">Ovo </option>
 <option value="Reenie Beanie">Reenie Beanie</option>
 <option value="Pacifico">Pacifico</option>
 <option value="Patrick Hand">Patrick Hand</option>
@@ -791,6 +823,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Play:regular,bold">Play (plus bold)</option>
 <option value="Playfair Display"> Playfair Display </option>
 <option value="Podkova"> Podkova </option>
+<option value="Pompiere">Pompiere </option>
 <option value="PT Sans">PT Sans</option>
 <option value="PT Sans:regular,italic,bold,bolditalic">PT Sans (plus itlic, bold, and bold italic)</option>
 <option value="PT Sans Caption">PT Sans Caption</option>
@@ -805,20 +838,27 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Puritan:regular,italic,bold,bolditalic">Puritan (plus italic, bold, and bold italic)</option>
 <option value="Quattrocento">Quattrocento</option>
 <option value="Quattrocento Sans">Quattrocento Sans</option>
+<option value="Questrial">Questrial </option>
 <option value="Radley">Radley</option>
 <option value="Raleway:100">Raleway</option>
+<option value="Rationale">Rationale </option>
 <option value="Redressed">Redressed</option>
 <option value="Rock Salt">Rock Salt</option>
+<option value="Rochester">Rochester </option>
 <option value="Rokkitt">Rokkitt</option>
+<option value="Rosario">Rosario </option>
 <option value="Ruslan Display">Ruslan Display</option>
 <option value="Schoolbell">Schoolbell</option>
 <option value="Shadows Into Light">Shadows Into Light</option>
 <option value="Shanti">Shanti</option>
+<option value="Short Stack">Short Stack </option>
 <option value="Sigmar One">Sigmar One</option>
 <option value="Six Caps">Six Caps</option>
 <option value="Slackey">Slackey</option>
+<option value="Smokum">Smokum </option>
 <option value="Smythe">Smythe</option>
 <option value="Sniglet:800">Sniglet</option>
+<option value="Snippet">Snippet </option>
 <option value="Special Elite">Special Elite</option>
 <option value="Stardos Stencil">Stardos Stencil</option>
 <option value="Stardos Stencil:400,700">Stardos Stencil (plus bold)</option>
@@ -832,17 +872,23 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="The Girl Next Door">The Girl Next Door</option>
 <option value="Tinos">Tinos</option>
 <option value="Tinos:regular,italic,bold,bolditalic">Tinos (plus italic, bold, and bold italic)</option>
+<option value="Tulpen One">Tulpen One </option>
 <option value="Ubuntu">Ubuntu</option>
 <option value="Ubuntu:regular,italic,bold,bolditalic">Ubuntu (plus italic, bold, and bold italic)</option>
 <option value="Ultra">Ultra</option>
+<option value="Unna">Unna </option>
 <option value="Unkempt">Unkempt</option>
 <option value="UnifrakturCook:bold">UnifrakturCook</option>
 <option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
 <option value="Varela">Varela</option>
 <option value="Varela Round">Varela Round</option>
 <option value="Vibur">Vibur</option>
+<option value="Vidaloka">Vidaloka </option>
+<option value="Volkhov">Volkhov </option>
+<option value="Volkhov:400,400italic,700,700italic">Volkhov (plus bold and italic) </option>
 <option value="Vollkorn">Vollkorn</option>
 <option value="Vollkorn:regular,italic,bold,bolditalic">Vollkorn (plus italic, bold, and bold italic)</option>
+<option value="Voltaire">Voltaire </option>
 <option value="VT323">VT323</option>
 <option value="Waiting for the Sunrise">Waiting for the Sunrise</option>
 <option value="Wallpoet">Wallpoet</option>
@@ -852,6 +898,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Yanone Kaffeesatz:300">Yanone Kaffeesatz:300</option>
 <option value="Yanone Kaffeesatz:400">Yanone Kaffeesatz:400</option>
 <option value="Yanone Kaffeesatz:700">Yanone Kaffeesatz:700</option>
+<option value="Yellowtail">Yellowtail </option>
 <option value="Yeseva One">Yeseva One</option>
 <option value="Zeyada">Zeyada</option>
 ';
@@ -859,37 +906,37 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 ?>
 
 
-<h2>Font 1 Options</h2>
+<h2><?php _e('Font 1 Options', 'googlefonts'); ?></h2>
 
-<p><strong>Select Font:</strong></p>
+<p><strong><?php _e('Select Font:', 'googlefonts'); ?></strong></p>
 
 <select name="googlefonts_font1" id="googlefonts_font1">
 <option selected="selected"><?php echo $this->options['googlefonts_font1'] ;?></option>
-<option value="off">None (Turn off Font 1)</option>
+<option value="off"><?php _e('None (Turn off Font 1)', 'googlefonts'); ?></option>
 
 <?php listgooglefontoptions(); ?>
 
 </select>
 
-<p><strong>Elements you want to assign this font to:*</strong></p>
+<p><strong><?php _e('Elements you want to assign this font to:*', 'googlefonts'); ?></strong></p>
 
-<input type="checkbox" <?php if ($this->options['googlefont1_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_body" value="checked"> All (body tag)<br>                                                         
-<input type="checkbox" <?php if ($this->options['googlefont1_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading1" value="checked"> Headline 1 (h1 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont1_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading2" value="checked"> Headline 2 (h2 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont1_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading3" value="checked"> Headline 3 (h3 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont1_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading4" value="checked"> Headline 4 (h4 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont1_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading5" value="checked"> Headline 5 (h5 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont1_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading6" value="checked"> Headline 6 (h6 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont1_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_blockquote" value="checked"> Blockquotes<br>
-<input type="checkbox" <?php if ($this->options['googlefont1_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_p" value="checked"> Paragraphs (p tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont1_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_li" value="checked"> Lists (li tags)<br>
+<input type="checkbox" <?php if ($this->options['googlefont1_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_body" value="checked"> <?php _e('All (body tags)', 'googlefonts'); ?><br>                                                         
+<input type="checkbox" <?php if ($this->options['googlefont1_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading1" value="checked"> <?php _e('Headline 1 (h1 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont1_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading2" value="checked"> <?php _e('Headline 2 (h2 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont1_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading3" value="checked"> <?php _e('Headline 3 (h3 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont1_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading4" value="checked"> <?php _e('Headline 4 (h4 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont1_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading5" value="checked"> <?php _e('Headline 5 (h5 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont1_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_heading6" value="checked"> <?php _e('Headline 6 (h6 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont1_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_blockquote" value="checked"> <?php _e('Blockquotes', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont1_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_p" value="checked"> <?php _e('Paragraphs (p tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont1_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont1_li" value="checked"> <?php _e('Lists (li tags)', 'googlefonts'); ?><br>
 
-<p><strong>Custom CSS:*</strong></p>
+<p><strong><?php _e('Custom CSS:*', 'googlefonts'); ?></strong></p>
 <textarea name="googlefont1_css" cols="70" rows="8" id="googlefont1_css">
 <?php echo stripslashes($this->options['googlefont1_css']) ; ?>
 </textarea>
 
-<p><input type="submit" name="googlefonts_save" value="Save" /></p>
+<p><input type="submit" name="googlefonts_save" value="<?php _e('Save', 'googlefonts'); ?>" /></p>
 
 <hr />
 
@@ -900,38 +947,38 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 
 
 
-<h2>Font 2 Options</h2>
+<h2><?php _e('Font 2 Options', 'googlefonts'); ?></h2>
 
-<p><strong>Select Font:</strong></p>
+<p><strong><?php _e('Select Font:', 'googlefonts'); ?></strong></p>
 
 <select name="googlefonts_font2" id="googlefonts_font2">
 <option selected="selected"><?php echo $this->options['googlefonts_font2'] ;?></option>
-<option value="off">None (Turn off Font 1)</option>
+<option value="off"><?php _e('None (Turn off Font 2)', 'googlefonts'); ?></option>
 
 <?php listgooglefontoptions(); ?>
 
 </select>
 
-<p><strong>Elements you want to assign this font to:*</strong><br />
+<p><strong><?php _e('Elements you want to assign this font to:*', 'googlefonts'); ?></strong><br />
 
-<input type="checkbox" <?php if ($this->options['googlefont2_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_body" value="checked"> All (body tag)<br>
-<input type="checkbox" <?php if ($this->options['googlefont2_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading1" value="checked"> Headline 1 (h1 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont2_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading2" value="checked"> Headline 2 (h2 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont2_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading3" value="checked"> Headline 3 (h3 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont2_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading4" value="checked"> Headline 4 (h4 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont2_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading5" value="checked"> Headline 5 (h5 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont2_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading6" value="checked"> Headline 6 (h6 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont2_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_blockquote" value="checked"> Blockquotes<br>
-<input type="checkbox" <?php if ($this->options['googlefont2_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_p" value="checked"> Paragraphs (p tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont2_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_li" value="checked"> Lists (li tags)<br>
+<input type="checkbox" <?php if ($this->options['googlefont2_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_body" value="checked"> All (body tags)<br>
+<input type="checkbox" <?php if ($this->options['googlefont2_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading1" value="checked"> <?php _e('Headline 1 (h1 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont2_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading2" value="checked"> <?php _e('Headline 2 (h2 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont2_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading3" value="checked"> <?php _e('Headline 3 (h3 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont2_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading4" value="checked"> <?php _e('Headline 4 (h4 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont2_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading5" value="checked"> <?php _e('Headline 5 (h5 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont2_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_heading6" value="checked"> <?php _e('Headline 6 (h6 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont2_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_blockquote" value="checked"> <?php _e('Blockquotes', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont2_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_p" value="checked"> <?php _e('Paragraphs (p tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont2_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont2_li" value="checked"> <?php _e('Lists (li tags)', 'googlefonts'); ?><br>
 
 
-<p><strong>Custom CSS:*</strong></p>
+<p><strong><?php _e('Custom CSS:*', 'googlefonts'); ?></strong></p>
 <p><textarea name="googlefont2_css" cols="70" rows="8" id="googlefont2_css">
 <?php echo stripslashes($this->options['googlefont2_css']) ; ?>
 </textarea>
 
-<p><input type="submit" name="googlefonts_save" value="Save" /></p>
+<p><input type="submit" name="googlefonts_save" value="<?php _e('Save', 'googlefonts'); ?>" /></p>
 
 <hr />
 
@@ -941,38 +988,38 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 
 
 
-<h2>Font 3 Options</h2>
+<h2><?php _e('Font 3 Options', 'googlefonts'); ?></h2>
 
-<p><strong>Select Font:</strong></p>
+<p><strong><?php _e('Select Font:', 'googlefonts'); ?></strong></p>
 
 <select name="googlefonts_font3" id="googlefonts_font3">
 <option selected="selected"><?php echo $this->options['googlefonts_font3'] ;?></option>
-<option value="off">None (Turn off Font 1)</option>
+<option value="off"><?php _e('None (Turn off Font 3)', 'googlefonts'); ?></option>
 
 <?php listgooglefontoptions(); ?>
 
 </select>
 
-<p><strong>Elements you want to assign this font to:*</strong><br />
+<p><strong><?php _e('Elements you want to assign this font to:*', 'googlefonts'); ?></strong><br />
 
-<input type="checkbox" <?php if ($this->options['googlefont3_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_body" value="checked"> All (body tag)<br>
-<input type="checkbox" <?php if ($this->options['googlefont3_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading1" value="checked"> Headline 1 (h1 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont3_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading2" value="checked"> Headline 2 (h2 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont3_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading3" value="checked"> Headline 3 (h3 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont3_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading4" value="checked"> Headline 4 (h4 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont3_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading5" value="checked"> Headline 5 (h5 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont3_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading6" value="checked"> Headline 6 (h6 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont3_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_blockquote" value="checked"> Blockquotes<br>
-<input type="checkbox" <?php if ($this->options['googlefont3_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_p" value="checked"> Paragraphs (p tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont3_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_li" value="checked"> Lists (li tags)<br>
+<input type="checkbox" <?php if ($this->options['googlefont3_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_body" value="checked"> <?php _e('All (body tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont3_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading1" value="checked"> <?php _e('Headline 1 (h1 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont3_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading2" value="checked"> <?php _e('Headline 2 (h2 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont3_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading3" value="checked"> <?php _e('Headline 3 (h3 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont3_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading4" value="checked"> <?php _e('Headline 4 (h4 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont3_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading5" value="checked"> <?php _e('Headline 5 (h5 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont3_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_heading6" value="checked"> <?php _e('Headline 6 (h6 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont3_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_blockquote" value="checked"> <?php _e('Blockquotes', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont3_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_p" value="checked"> <?php _e('Paragraphs (p tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont3_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont3_li" value="checked"> <?php _e('Lists (li tags)', 'googlefonts'); ?><br>
 
 
-<p><strong>Custom CSS:*</strong></p>
+<p><strong><?php _e('Custom CSS:*', 'googlefonts'); ?></strong></p>
 <p><textarea name="googlefont3_css" cols="70" rows="8" id="googlefont3_css">
 <?php echo stripslashes($this->options['googlefont3_css']) ; ?>
 </textarea>
 
-<p><input type="submit" name="googlefonts_save" value="Save" /></p>
+<p><input type="submit" name="googlefonts_save" value="<?php _e('Save', 'googlefonts'); ?>" /></p>
 
 <hr />
 
@@ -982,38 +1029,38 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 
 
 
-<h2>Font 4 Options</h2>
+<h2><?php _e('Font 4 Options', 'googlefonts'); ?></h2>
 
-<p><strong>Select Font:</strong></p>
+<p><strong><?php _e('Select Font:', 'googlefonts'); ?></strong></p>
 
 <select name="googlefonts_font4" id="googlefonts_font4">
 <option selected="selected"><?php echo $this->options['googlefonts_font4'] ;?></option>
-<option value="off">None (Turn off Font 1)</option>
+<option value="off"><?php _e('None (Turn off Font 4)', 'googlefonts'); ?></option>
 
 <?php listgooglefontoptions(); ?>
 
 </select>
 
-<p><strong>Elements you want to assign this font to:*</strong><br />
+<p><strong><?php _e('Elements you want to assign this font to:*', 'googlefonts'); ?></strong><br />
 
-<input type="checkbox" <?php if ($this->options['googlefont4_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_body" value="checked"> All (body tag)<br>
-<input type="checkbox" <?php if ($this->options['googlefont4_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading1" value="checked"> Headline 1 (h1 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont4_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading2" value="checked"> Headline 2 (h2 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont4_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading3" value="checked"> Headline 3 (h3 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont4_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading4" value="checked"> Headline 4 (h4 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont4_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading5" value="checked"> Headline 5 (h5 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont4_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading6" value="checked"> Headline 6 (h6 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont4_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_blockquote" value="checked"> Blockquotes<br>
-<input type="checkbox" <?php if ($this->options['googlefont4_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_p" value="checked"> Paragraphs (p tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont4_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_li" value="checked"> Lists (li tags)<br>
+<input type="checkbox" <?php if ($this->options['googlefont4_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_body" value="checked"> <?php _e('All (body tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont4_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading1" value="checked"> <?php _e('Headline 1 (h1 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont4_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading2" value="checked"> <?php _e('Headline 2 (h2 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont4_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading3" value="checked"> <?php _e('Headline 3 (h3 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont4_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading4" value="checked"> <?php _e('Headline 4 (h4 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont4_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading5" value="checked"> <?php _e('Headline 5 (h5 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont4_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_heading6" value="checked"> <?php _e('Headline 6 (h6 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont4_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_blockquote" value="checked"> <?php _e('Blockquotes', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont4_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_p" value="checked"> <?php _e('Paragraphs (p tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont4_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont4_li" value="checked"> <?php _e('Lists (li tags)', 'googlefonts'); ?><br>
 
 
-<p><strong>Custom CSS:*</strong></p>
+<p><strong><?php _e('Custom CSS:*', 'googlefonts'); ?></strong></p>
 <p><textarea name="googlefont4_css" cols="70" rows="8" id="googlefont4_css">
 <?php echo stripslashes($this->options['googlefont4_css']) ; ?>
 </textarea>
 
-<p><input type="submit" name="googlefonts_save" value="Save" /></p>
+<p><input type="submit" name="googlefonts_save" value="<?php _e('Save', 'googlefonts'); ?>" /></p>
 
 <hr />
 
@@ -1023,38 +1070,38 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 
 
 
-<h2>Font 5 Options</h2>
+<h2><?php _e('Font 5 Options', 'googlefonts'); ?></h2>
 
-<p><strong>Select Font:</strong></p>
+<p><strong><?php _e('Select Font:', 'googlefonts'); ?></strong></p>
 
 <select name="googlefonts_font5" id="googlefonts_font5">
 <option selected="selected"><?php echo $this->options['googlefonts_font5'] ;?></option>
 
-<option value="off">None (Turn off Font 1)</option>
+<option value="off"><?php _e('None (Turn off Font 5)', 'googlefonts'); ?></option>
 
 <?php listgooglefontoptions(); ?>
 </select>
 
-<p><strong>Elements you want to assign this font to:*</strong><br />
+<p><strong><?php _e('Elements you want to assign this font to:*', 'googlefonts'); ?></strong><br />
 
-<input type="checkbox" <?php if ($this->options['googlefont5_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_body" value="checked"> All (body tag)<br>
-<input type="checkbox" <?php if ($this->options['googlefont5_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading1" value="checked"> Headline 1 (h1 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont5_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading2" value="checked"> Headline 2 (h2 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont5_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading3" value="checked"> Headline 3 (h3 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont5_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading4" value="checked"> Headline 4 (h4 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont5_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading5" value="checked"> Headline 5 (h5 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont5_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading6" value="checked"> Headline 6 (h6 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont5_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_blockquote" value="checked"> Blockquotes<br>
-<input type="checkbox" <?php if ($this->options['googlefont5_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_p" value="checked"> Paragraphs (p tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont5_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_li" value="checked"> Lists (li tags)<br>
+<input type="checkbox" <?php if ($this->options['googlefont5_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_body" value="checked"> <?php _e('All (body tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont5_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading1" value="checked"> <?php _e('Headline 1 (h1 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont5_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading2" value="checked"> <?php _e('Headline 2 (h2 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont5_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading3" value="checked"> <?php _e('Headline 3 (h3 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont5_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading4" value="checked"> <?php _e('Headline 4 (h4 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont5_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading5" value="checked"> <?php _e('Headline 5 (h5 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont5_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_heading6" value="checked"> <?php _e('Headline 6 (h6 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont5_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_blockquote" value="checked"> <?php _e('Blockquotes', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont5_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_p" value="checked"> <?php _e('Paragraphs (p tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont5_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont5_li" value="checked"> <?php _e('Lists (li tags)', 'googlefonts'); ?><br>
 
 
-<p><strong>Custom CSS:*</strong></p>
+<p><strong><?php _e('Custom CSS:*', 'googlefonts'); ?></strong></p>
 <p><textarea name="googlefont5_css" cols="70" rows="8" id="googlefont5_css">
 <?php echo stripslashes($this->options['googlefont5_css']) ; ?>
 </textarea>
 
-<p><input type="submit" name="googlefonts_save" value="Save" /></p>
+<p><input type="submit" name="googlefonts_save" value="<?php _e('Save', 'googlefonts'); ?>" /></p>
 
 <hr />
 
@@ -1064,58 +1111,57 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 
 
 
-<h2>Font 6 Options</h2>
+<h2><?php _e('Font 6 Options', 'googlefonts'); ?></h2>
 
-<p><strong>Select Font:</strong></p>
+<p><strong><?php _e('Select Font:', 'googlefonts'); ?></strong></p>
 
 <select name="googlefonts_font6" id="googlefonts_font6">
 <option selected="selected"><?php echo $this->options['googlefonts_font6'] ;?></option>
-<option value="off">None (Turn off Font 1)</option>
+<option value="off"><?php _e('None (Turn off Font 6)', 'googlefonts'); ?></option>
 
 <?php listgooglefontoptions(); ?>
 
 </select>
 
-<p><strong>Elements you want to assign this font to:*</strong><br />
+<p><strong><?php _e('Elements you want to assign this font to:*', 'googlefonts'); ?></strong><br />
 
-<input type="checkbox" <?php if ($this->options['googlefont6_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_body" value="checked"> All (body tag)<br>
-<input type="checkbox" <?php if ($this->options['googlefont6_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading1" value="checked"> Headline 1 (h1 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont6_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading2" value="checked"> Headline 2 (h2 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont6_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading3" value="checked"> Headline 3 (h3 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont6_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading4" value="checked"> Headline 4 (h4 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont6_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading5" value="checked"> Headline 5 (h5 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont6_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading6" value="checked"> Headline 6 (h6 tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont6_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_blockquote" value="checked"> Blockquotes<br>
-<input type="checkbox" <?php if ($this->options['googlefont6_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_p" value="checked"> Paragraphs (p tags)<br>
-<input type="checkbox" <?php if ($this->options['googlefont6_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_li" value="checked"> Lists (li tags)<br>
+<input type="checkbox" <?php if ($this->options['googlefont6_body'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_body" value="checked"> <?php _e('All (body tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont6_heading1'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading1" value="checked"> <?php _e('Headline 1 (h1 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont6_heading2'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading2" value="checked"> <?php _e('Headline 2 (h2 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont6_heading3'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading3" value="checked"> <?php _e('Headline 3 (h3 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont6_heading4'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading4" value="checked"> <?php _e('Headline 4 (h4 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont6_heading5'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading5" value="checked"> <?php _e('Headline 5 (h5 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont6_heading6'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_heading6" value="checked"> <?php _e('Headline 6 (h6 tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont6_blockquote'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_blockquote" value="checked"> <?php _e('Blockquotes', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont6_p'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_p" value="checked"> <?php _e('Paragraphs (p tags)', 'googlefonts'); ?><br>
+<input type="checkbox" <?php if ($this->options['googlefont6_li'] == "checked") { echo 'checked'; } else { echo 'unchecked'; } ?> name="googlefont6_li" value="checked"> <?php _e('Lists (li tags)', 'googlefonts'); ?><br>
 
 
-<p><strong>Custom CSS:*</strong></p>
+<p><strong><?php _e('Custom CSS:*', 'googlefonts'); ?></strong></p>
 <p><textarea name="googlefont6_css" cols="70" rows="8" id="googlefont6_css">
 <?php echo stripslashes($this->options['googlefont6_css']) ; ?>
 </textarea>
 
-<p><input type="submit" name="googlefonts_save" value="Save" /></p>
+<p><input type="submit" name="googlefonts_save" value="<?php _e('Save', 'googlefonts'); ?>" /></p>
 
 <hr />
 
 
-<h2>Troubleshooting</h2>
-<p>The most common error occurs when a font is specified as "off" but has boxes checked beneath it. Make sure that there are no boxes checked beneath a font that you want to be off.</p>
+<h2><?php _e('Troubleshooting', 'googlefonts'); ?></h2>
+<p><?php _e('The most common error occurs when a font is specified as "off" but has boxes checked beneath it. Make sure that there are no boxes checked beneath a font that you want to be off.', 'googlefonts'); ?></p>
 
-<p>
-This plugin uses open source fonts that are hosted on Google's servers. For more information about this service, you can visit the 
-	<a href="http://code.google.com/webfonts/">Google Font Directory</a>.
+<p><?php _e('This plugin uses open source fonts that are hosted on Google&rsquo;s servers. For more information about this service, you can visit the', 'googlefonts'); ?> 
+	<a href="http://code.google.com/webfonts/"><?php _e('Google Font Directory', 'googlefonts'); ?></a>.
 </p>
 <hr />
 
 
-<h2>* CSS WARNING</h2>
-<p>Most likely the theme you are using has defined very specific elements in its stylesheet and these may override the generic tags specified above. If you don't see any changes after checking the style boxes above, you will need to enter custom css into the CSS box. An example of CSS that would be more specific would be:</p>
+<h2><?php _e('* CSS WARNING', 'googlefonts'); ?></h2>
+<p><?php _e('Most likely the theme you are using has defined very specific elements in its stylesheet and these may override the generic tags specified above. If you don&rsquo;t see any changes after checking the style boxes above, you will need to enter custom css into the CSS box. An example of CSS that would be more specific would be:', 'googlefonts'); ?></p>
 	
 <p>#container p { font-family: 'Reenie Beanie', arial, serif; }</p>
 
-<p>This would define all paragraphs found within a &lt;div id=&quot;container&quot;&gt;&lt;/div&gt; element. Stylesheets (CSS) can be sensitive and tricky sometimes. If you are new to CSS the <a href="http://www.w3schools.com/css/" title="w3schools tutorials">w3schools tutorials</a> are a great place to start.
+<p><?php _e('This would define all paragraphs found within a &lt;div id=&quot;container&quot;&gt;&lt;/div&gt; element. Stylesheets (CSS) can be sensitive and tricky sometimes. If you are new to CSS the <a href="http://www.w3schools.com/css/" title="w3schools tutorials">w3schools tutorials</a> are a great place to start.', 'googlefonts'); ?>
 
 </form>
     </td>
