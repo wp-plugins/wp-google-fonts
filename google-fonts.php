@@ -2,7 +2,7 @@
 /* 
 Plugin Name: WP Google Fonts
 Plugin URI: http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/
-Version: v2.4
+Version: v2.5
 Author: <a href="http://adrian3.com/">Adrian3</a>
 Description: The Wordpress Google Fonts Plugin makes it even easier to add and customize Google fonts on your site through Wordpress. 
 Author: Adrian Hanft
@@ -568,18 +568,22 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 
 <hr />
 
-<!-- most recent font added was Delius Unicase August 27, 2011-->
+<!-- most recent font added was Alike Angular October 2, 2011-->
 <?php
 	function listgooglefontoptions() { echo '
 <option value="Abel">Abel </option>
+<option value="Abril Fatface">Abril Fatface</option>
 <option value="Aclonica">Aclonica</option>
 <option value="Actor">Actor </option>
+<option value="Adamina">Adamina</option>
 <option value="Aldrich">Aldrich </option>
 <option value="Alice">Alice </option>
 <option value="Alike">Alike </option>
+<option value="Alike Angular">Alike Angular</option>
 <option value="Allan">Allan</option>
 <option value="Andika">Andika </option>
 <option value="Annie Use Your Telescope">Annie Use Your Telescope</option>
+<option value="Antic">Antic</option>
 <option value="Anonymous Pro">Anonymous Pro</option>
 <option value="Anonymous Pro:regular,italic,bold,bolditalic">Anonymous Pro (plus italic, bold, and bold italic)</option>
 <option value="Allerta Stencil">Allerta Stencil</option>
@@ -618,8 +622,11 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Caudex">Caudex</option>
 <option value="Caudex:regular,italic,bold,bolditalic">Caudex (plus italic, bold, and bold italic)</option>
 <option value="Cedarville Cursive">Cedarville Cursive</option>
+<option value="Changa One">Changa One</option>
 <option value="Cherry Cream Soda">Cherry Cream Soda</option>
 <option value="Chewy">Chewy</option>
+<option value="Chivo">Chivo</option>
+<option value="Chivo:400,900">Chivo (plus bold)</option>
 <option value="Coda">Coda</option>
 <option value="Comfortaa">Comfortaa </option>
 <option value="Comfortaa:300,400,700">Comfortaa (plus book and bold) </option>
@@ -643,6 +650,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Delius Swash Caps">Delius Swash Caps </option>
 <option value="Delius Unicase">Delius Unicase </option>
 <option value="Didact Gothic">Didact Gothic</option>
+<option value="Dorsa">Dorsa</option>
 <option value="Droid Sans">Droid Sans</option>
 <option value="Droid Sans:regular,bold">Droid Sans (plus bold)</option>
 <option value="Droid Sans Mono">Droid Sans Mono</option>
@@ -651,6 +659,8 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="EB Garamond">EB Garamond</option>
 <option value="Expletus Sans">Expletus Sans</option>
 <option value="Expletus Sans:regular,500,600,bold">Expletus Sans (plus 500, 600, and bold)</option>
+<option value="Fanwood Text">Fanwood Text</option>
+<option value="Fanwood Text:400,400italic">Fanwood Text (plus italic)</option>
 <option value="Federo">Federo </option>
 <option value="Fontdiner Swanky">Fontdiner Swanky</option>
 <option value="Forum">Forum</option>
@@ -714,6 +724,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Josefin Slab:bold,bolditalic">Josefin Slab Bold 700 (plus italic)</option>
 <option value="Judson">Judson</option>
 <option value="Judson:regular,regularitalic,bold">Judson (plus bold)</option>
+<option value="Julee">Julee</option>
 <option value="Jura:light"> Jura Light</option>
 <option value="Jura"> Jura Regular</option>
 <option value="Jura:500"> Jura 500</option>
@@ -763,6 +774,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Meddon">Meddon</option>
 <option value="MedievalSharp">MedievalSharp</option>
 <option value="Megrim">Megrim</option>
+<option value="Merienda One">Merienda One</option>
 <option value="Merriweather">Merriweather</option>
 <option value="Metrophobic">Metrophobic</option>
 <option value="Michroma">Michroma</option>
@@ -815,6 +827,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Ovo">Ovo </option>
 <option value="Reenie Beanie">Reenie Beanie</option>
 <option value="Pacifico">Pacifico</option>
+<option value="Passero One">Passero One</option>
 <option value="Patrick Hand">Patrick Hand</option>
 <option value="Paytone One">Paytone One</option>
 <option value="Permanent Marker">Permanent Marker</option>
@@ -823,7 +836,10 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Play:regular,bold">Play (plus bold)</option>
 <option value="Playfair Display"> Playfair Display </option>
 <option value="Podkova"> Podkova </option>
+<option value="Poller One">Poller One</option>
 <option value="Pompiere">Pompiere </option>
+<option value="Prata">Prata</option>
+<option value="Prociono">Prociono</option>
 <option value="PT Sans">PT Sans</option>
 <option value="PT Sans:regular,italic,bold,bolditalic">PT Sans (plus itlic, bold, and bold italic)</option>
 <option value="PT Sans Caption">PT Sans Caption</option>
@@ -848,6 +864,7 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Rokkitt">Rokkitt</option>
 <option value="Rosario">Rosario </option>
 <option value="Ruslan Display">Ruslan Display</option>
+<option value="Sansita One">Sansita One</option>
 <option value="Schoolbell">Schoolbell</option>
 <option value="Shadows Into Light">Shadows Into Light</option>
 <option value="Shanti">Shanti</option>
@@ -859,7 +876,10 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Smythe">Smythe</option>
 <option value="Sniglet:800">Sniglet</option>
 <option value="Snippet">Snippet </option>
+<option value="Sorts Mill Goudy">Sorts Mill Goudy</option>
+<option value="Sorts Mill Goudy:400,400italic">Sorts Mill Goudy (plus italic)</option>
 <option value="Special Elite">Special Elite</option>
+<option value="Spinnaker">Spinnaker</option>
 <option value="Stardos Stencil">Stardos Stencil</option>
 <option value="Stardos Stencil:400,700">Stardos Stencil (plus bold)</option>
 <option value="Sue Ellen Francisco">Sue Ellen Francisco</option>
@@ -869,6 +889,13 @@ $this->options['googlefont6_css'] = $_POST['googlefont6_css'];
 <option value="Tangerine">Tangerine</option>
 <option value="Tenor Sans"> Tenor Sans </option>
 <option value="Terminal Dosis Light">Terminal Dosis Light</option>
+<option value="Terminal Dosis:200">Terminal Dosis 200</option>
+<option value="Terminal Dosis:300">Terminal Dosis 300</option>
+<option value="Terminal Dosis">Terminal Dosis Regular</option>
+<option value="Terminal Dosis:500">Terminal Dosis 500</option>
+<option value="Terminal Dosis:600">Terminal Dosis 600</option>
+<option value="Terminal Dosis:700">Terminal Dosis 700</option>
+<option value="Terminal Dosis:800">Terminal Dosis 800</option>
 <option value="The Girl Next Door">The Girl Next Door</option>
 <option value="Tinos">Tinos</option>
 <option value="Tinos:regular,italic,bold,bolditalic">Tinos (plus italic, bold, and bold italic)</option>
