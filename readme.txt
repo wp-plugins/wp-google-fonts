@@ -3,7 +3,7 @@ Contributors: Adrian3
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=designer%40adrianhanft%2ecom&lc=US&item_name=Wordpress%20Plugin%20Development&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: Google fonts, fonts, font, type, free fonts, typography, theme, admin, plugin, css, design, plugin, template, page, posts, links, Google
 Requires at least: 2.0.2
-Tested up to: 3.4.2
+Tested up to: 3.5
 Stable tag: trunk
 License: GPLv2 or later
 
@@ -15,6 +15,11 @@ Google's free font directory is one of the most exciting developments in web typ
 Right now, the Google Directory has over hundreds great fonts, and the selection is steadily growing. As new fonts are added, we will release updates to the plugin quickly so you can start using new fonts as they become available. It truly is an exciting time to be creating websites, and I hope this plugin helps you create some great stuff. - Adrian3
 
 == Changelog ==
+Version 3.01
+- Language support added for Arabic by Yaser Maadan (http://www.englize.com) and Slovak by Branco Radenovich (http://webhostinggeeks.com/blog/)
+- Minor bug fixes
+- Updated backup font list
+
 Version 3.0
 - A huge thank you to Aaron Brown (http://www.webmalama.com/) for this major plugin upgrade.
 - Plugin completely reworked to dynamically sync with the ever-growing Google font library. This allows the plugin to always be current and eliminates the need for you to install an update every time Google adds new fonts.

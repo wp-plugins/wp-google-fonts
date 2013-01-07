@@ -2,7 +2,7 @@
 /* 
 Plugin Name: WP Google Fonts
 Plugin URI: http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/
-Version: v3.0
+Version: v3.0.1
 Description: The Wordpress Google Fonts Plugin makes it even easier to add and customize Google fonts on your site through Wordpress. 
 Author: Adrian Hanft, Aaron Brown
 Author URI: http://adrian3.com/
@@ -220,7 +220,7 @@ if (!class_exists('googlefonts')) {
 						$this->gf_notices[] = sprintf(__("Font list sync successful, updated %s.", $this->localizationDomain), $this->gf_font_list_time());
 						$result = true;
 					}else{
-						$this->gf_notices[] = __("Unable to do a live update on the font list.", $this->localizationDomain);
+						$this->gf_notices[] = sprintf(__("Unable to do a live update on the font list. Using cached version from %s.", $this->localizationDomain), $this->gf_font_list_time($filetime));
 					}
 				}else{
 					$this->gf_notices[] = sprintf(__("Font list is up to date. Last updated %s.", $this->localizationDomain), $this->gf_font_list_time($filetime));
@@ -256,8 +256,8 @@ if (!class_exists('googlefonts')) {
 				$fonts_json = $this->gf_download_font_list($this->api_url.$this->api_key);
 			}
 			
-			/* if still nothing, then get the local file instead */
-			if(!$fonts_json){
+			/* if still nothing and do not have a cache already, then get the local file instead */
+			if(!$fonts_json && !$this->gf_fonts){
 				$fonts_json = $this->gf_get_local_fonts();
 			}
 			
@@ -938,8 +938,7 @@ if (!class_exists('googlefonts')) {
 					<td>
 
 						<h1><?php _e('Google Font Control Panel', 'googlefonts'); ?></h1>
-						<p><img src="<?php 	echo get_bloginfo('wpurl'); 
-							echo '/wp-content/plugins/wp-google-fonts/images/google-fonts-logo.jpg'; ?>" width="261" height="146" align="right" />
+						<p><img src="<?php 	echo $this->thispluginurl . '/images/google-fonts-logo.jpg'; ?>" width="261" height="146" align="right" />
 							<?php _e('This control panel gives you the ability to control how your Google Fonts fonts are displayed. For more information about this plugin, please visit the', $this->localizationDomain); ?> 
 							<a href="http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/" title="Google Fonts plugin page"><?php _e('Google Fonts plugin page', $this->localizationDomain); ?></a>. 
 							<?php _e('Thanks for using Google Fonts, and we hope you like this plugin.', $this->localizationDomain); ?> <a href="http://adrian3.com/" title="-Adrian 3">-Adrian3</a> and <a href="http://www.webmalama.com/" title="Aaron Brown">Aaron Brown</a></p>
