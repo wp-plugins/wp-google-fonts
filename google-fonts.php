@@ -2,7 +2,7 @@
 /* 
 Plugin Name: WP Google Fonts
 Plugin URI: http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/
-Version: v3.1
+Version: v3.1.1
 Description: The Wordpress Google Fonts Plugin makes it even easier to add and customize Google fonts on your site through Wordpress. 
 Author: Adrian Hanft, Aaron Brown
 Author URI: http://adrian3.com/
@@ -174,7 +174,7 @@ if (!class_exists('googlefonts')) {
 			if(isset($_GET['page']) && $_GET['page'] == $this->gf_filename){
 				//wp_enqueue_script('google-font-admin',$this->thispluginurl . 'scripts/gf-scripts.js',array('jquery'));
 				//wp_enqueue_script('google-font-admin-ajax',$this->thispluginurl . 'scripts/gf-scripts-ajax.js',array('jquery'));
-				wp_enqueue_style('gf-admin-style',$this->thispluginurl . 'styles/gf-style.css');
+				wp_enqueue_style('gf-admin-style',$this->thispluginurl . 'styles/gf-style.css', array(), '3.1.1');
 				//wp_localize_script( 'google-font-admin-ajax', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'gfvalue' => 1234 ) );
 			}
 		}
@@ -940,15 +940,18 @@ if (!class_exists('googlefonts')) {
 							$this->options[$option] = '';
 						}
 					}else{
-						/*working with the old array, set new array to empty for this font */
-						$this->options['googlefont_selections'][$name] = array(
-								'family' => null,
-								'variants' => array(),
-								'subsets' => array()
-							);
-						
-						/* clear old option */
-						$this->options[$option] = '';
+						/* skip it if it has already been converted */
+						if(!isset($this->options['googlefont_selections'][$name]['family']) || !$this->options['googlefont_selections'][$name]['family']){
+							/*working with the old array or empty array, set new array to empty for this font */
+							$this->options['googlefont_selections'][$name] = array(
+									'family' => null,
+									'variants' => array(),
+									'subsets' => array()
+								);
+								
+							/* clear old option */
+							$this->options[$option] = '';
+						}
 					}
 				}
 			

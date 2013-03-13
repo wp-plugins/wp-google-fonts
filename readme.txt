@@ -15,6 +15,9 @@ Google's free font directory is one of the most exciting developments in web typ
 Right now, the Google Directory has hundreds of great fonts, and the selection is steadily growing. As new fonts are added, we will release updates to the plugin quickly so you can start using new fonts as they become available. It truly is an exciting time to be creating websites, and I hope this plugin helps you create some great stuff. - Adrian3
 
 == Changelog ==
+Version 3.11
+- Fixed a bug that affected anyone upgrading from versions 3.0 or 3.0.1 to 3.1 where your old font settings were not saved. If your settings are gone, all you have to do is select the same font in the same slot as before. The rest of your settings for that font (where it's used, custom css, etc) will still be there in many cases. In some cases you will not and you'll have to re-enter them. If they don't remember them, you can try to get them by visiting a cached version of your site on Google and copying the CSS the plugin provided in the source (view your webpage source to see it).
+
 Version 3.1
 - Rewritten back end, this time using AJAX and smarter logic so that loading the settings page is much faster 
 - Fixed bug that could potentially cause browsers to stall
