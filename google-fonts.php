@@ -1078,7 +1078,7 @@ if (!class_exists('googlefonts')) {
 						
 						<h2><?php _e('Troubleshooting', $this->localizationDomain); ?></h2>
 						<p><?php _e('This plugin uses open source fonts that are hosted on Google&rsquo;s servers. For more information about this service, you can visit the', $this->localizationDomain); ?> 
-							<a href="http://code.google.com/webfonts/"><?php _e('Google Font Directory', $this->localizationDomain); ?></a>.
+							<a href="http://www.google.com/fonts/"><?php _e('Google Font Directory', $this->localizationDomain); ?></a>.
 						</p>
 						<hr />
 
