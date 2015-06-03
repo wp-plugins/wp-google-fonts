@@ -9,7 +9,9 @@ License: GPLv2 or later
 The WP Google Fonts plugin allows you to easily add fonts from the Google Font Directory to your Wordpress theme. 
 
 == Description ==
-Google's free font directory is one of the most exciting developments in web typography in a very long time. The amazing rise of this new font resource has made this plugin the most popular font plugin on Wordpress and it shows no signs of stopping. The WP Google Font plugin makes it even easier to use Google's free service to add high quality fonts to your Wordpress powered site. Not only does this plugin add the necessary Google code, but it also gives you the ability to assign the Google fonts to specific CSS elements of your website from within the Wordpress admin. Or if you would rather, you can target the Google fonts from your own theme's stylesheet.
+Google's free font directory is one of the most exciting developments in web typography in a very long time. The amazing rise of this new font resource has made this plugin the most popular font plugin on Wordpress and it shows no signs of stopping. 
+
+The WP Google Font plugin makes it even easier to use Google's free service to add high quality fonts to your Wordpress powered site. Not only does this plugin add the necessary Google code, but it also gives you the ability to assign the Google fonts to specific CSS elements of your website from within the Wordpress admin. Or if you would rather, you can target the Google fonts from your own theme's stylesheet.
 
 Right now, the Google Directory has hundreds of great fonts, and the selection is steadily growing. As new fonts are added, we will release updates to the plugin quickly so you can start using new fonts as they become available. It truly is an exciting time to be creating websites, and I hope this plugin helps you create some great stuff. - Adrian3
 
