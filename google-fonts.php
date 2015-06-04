@@ -1052,7 +1052,7 @@ if (!class_exists('googlefonts')) {
 
 						<h1><?php _e('Google Font Control Panel', 'googlefonts'); ?></h1>
 						<p><?php _e('This control panel gives you the ability to control how your Google Fonts fonts are displayed. For more information about this plugin, please visit the', $this->localizationDomain); ?> 
-							<a href="http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/" title="Google Fonts plugin page"><?php _e('Google Fonts plugin page', $this->localizationDomain); ?></a>. 
+							<a href="https://github.com/adrian3/wp-google-fonts" title="Google Fonts plugin page"><?php _e('Google Fonts plugin page', $this->localizationDomain); ?></a>. 
 							<?php _e('Thanks for using Google Fonts, and we hope you like this plugin.', $this->localizationDomain); ?> <br /><a target="_blank" href="https://wordpress.org/plugins/sumome" >Updated by SumoMe (tools to grow your WP site)</a></p>
 
 						<hr />
