@@ -4,8 +4,8 @@ Plugin Name: WP Google Fonts
 Plugin URI: http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/
 Version: v3.1.1
 Description: The Wordpress Google Fonts Plugin makes it even easier to add and customize Google fonts on your site through Wordpress. 
-Author: Adrian Hanft, Aaron Brown
-Author URI: http://adrian3.com/
+Author: Noah Kagan
+Author URI: http://SumoMe.com/
 */
 
 /*  Copyright 2010-2011  Adrian Hanft
@@ -1051,10 +1051,9 @@ if (!class_exists('googlefonts')) {
 					<td>
 
 						<h1><?php _e('Google Font Control Panel', 'googlefonts'); ?></h1>
-						<p><img src="<?php 	echo $this->thispluginurl . '/images/google-fonts-logo.jpg'; ?>" width="261" height="146" align="right" />
-							<?php _e('This control panel gives you the ability to control how your Google Fonts fonts are displayed. For more information about this plugin, please visit the', $this->localizationDomain); ?> 
+						<p><?php _e('This control panel gives you the ability to control how your Google Fonts fonts are displayed. For more information about this plugin, please visit the', $this->localizationDomain); ?> 
 							<a href="http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/" title="Google Fonts plugin page"><?php _e('Google Fonts plugin page', $this->localizationDomain); ?></a>. 
-							<?php _e('Thanks for using Google Fonts, and we hope you like this plugin.', $this->localizationDomain); ?> <a href="http://adrian3.com/" title="-Adrian 3">-Adrian3</a> and <a href="http://www.webmalama.com/" title="Aaron Brown">Aaron Brown</a></p>
+							<?php _e('Thanks for using Google Fonts, and we hope you like this plugin.', $this->localizationDomain); ?> <br /><a target="_blank" href="https://wordpress.org/plugins/sumome" >Updated by SumoMe (tools to grow your WP site)</a></p>
 
 						<hr />
 						
