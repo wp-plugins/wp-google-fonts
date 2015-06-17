@@ -25,7 +25,7 @@
                         <input type="hidden" name="listname" value="awlist3626406" />
                         <input type="hidden" name="redirect" value="http://email1k.sumome.com/tweet.html" id="redirect_19605a373ab8e7f77fc954424326ab1c" />
                         <input type="hidden" name="meta_redirect_onlist" value="http://email1k.sumome.com/tweet.html" />
-                        <input type="hidden" name="meta_adtracking" value="google-analyticator" />
+                        <input type="hidden" name="meta_adtracking" value="google-fonts" />
                         <input type="hidden" name="meta_message" value="1" />
                         <input type="hidden" name="meta_required" value="email" />
                         <input type="hidden" name="meta_tooltip" value="" />
