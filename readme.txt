@@ -2,7 +2,7 @@
 Contributors: Adrian3
 Tags: Google fonts, fonts, font, type, free fonts, typography, theme, admin, plugin, css, design, plugin, template, page, posts, links, Google
 Requires at least: 2.0.2
-Tested up to: 3.5.1
+Tested up to: 4.2.2
 Stable tag: trunk
 License: GPLv2 or later
 
