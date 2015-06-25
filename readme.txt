@@ -2,7 +2,7 @@
 Contributors: Adrian3
 Tags: Google fonts, fonts, font, type, free fonts, typography, theme, admin, plugin, css, design, plugin, template, page, posts, links, Google
 Requires at least: 2.0.2
-Tested up to: 4.2.2
+Tested up to: 4.2.3
 Stable tag: trunk
 License: GPLv2 or later
 
@@ -16,6 +16,9 @@ The WP Google Font plugin makes it even easier to use Google's free service to a
 Right now, the Google Directory has hundreds of great fonts, and the selection is steadily growing. As new fonts are added, we will release updates to the plugin quickly so you can start using new fonts as they become available. It truly is an exciting time to be creating websites, and I hope this plugin helps you create some great stuff. - Adrian3
 
 == Changelog ==
+Version 3.1.3
+- Fix SSL cert notices on settings page for Google API requests.
+
 Version 3.11
 - Fixed a bug that affected anyone upgrading from versions 3.0 or 3.0.1 to 3.1 where your old font settings were not saved. If your settings are gone, all you have to do is select the same font in the same slot as before. The rest of your settings for that font (where it's used, custom css, etc) will still be there in many cases. In some cases you will not and you'll have to re-enter them. If they don't remember them, you can try to get them by visiting a cached version of your site on Google and copying the CSS the plugin provided in the source (view your webpage source to see it).
 

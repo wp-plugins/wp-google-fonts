@@ -2,7 +2,7 @@
 /* 
 Plugin Name: WP Google Fonts
 Plugin URI: http://adrian3.com/projects/wordpress-plugins/wordpress-google-fonts-plugin/
-Version: v3.1.2
+Version: v3.1.3
 Description: The Wordpress Google Fonts Plugin makes it even easier to add and customize Google fonts on your site through Wordpress. 
 Author: Noah Kagan
 Author URI: http://SumoMe.com/
@@ -65,7 +65,7 @@ if (!class_exists('googlefonts')) {
         */
         var $options = array();
 
-		var $api_key = '?key=AIzaSyDXgT0NYjLhDmUzdcxC5RITeEDimRmpq3s';
+		var $api_key = '?key=AIzaSyD6kL15KaUQpZLBN42WzXadai8hDgoINUg';
 		
 		var $api_url = 'https://www.googleapis.com/webfonts/v1/webfonts';
 		
@@ -257,7 +257,7 @@ if (!class_exists('googlefonts')) {
 		
 		function gf_update_font_cache(){
 			$updated = false;
-			$fonts_json = $this->gf_download_font_list($this->api_url);
+			$fonts_json = NULL;//$this->gf_download_font_list($this->api_url); // No longer works without api key
 			
 			/* if we didn't get anything, try with api key */
 			if(!$fonts_json){
@@ -281,8 +281,8 @@ if (!class_exists('googlefonts')) {
 			
 			if(function_exists('wp_remote_get')){
 				
-				$response = wp_remote_get($url, array('sslverify' => false));
-				
+				$response = wp_remote_get($url/*, array('sslverify' => false)*/);
+
 				if( is_wp_error($response)){
 				
 					$this->gf_notices[] = sprintf(__("Unable to connect to Google's Webfont server at <a href='%s' target='_blank'>this URL</a>.", $this->localizationDomain), $url);
